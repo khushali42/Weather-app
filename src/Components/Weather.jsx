@@ -1,18 +1,11 @@
-import { AddCircleOutline, Cloud, CloudCircleOutlined, Edit } from "@material-ui/icons";
+import { CloudCircleOutlined, Edit } from "@material-ui/icons";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import '../Components/Weather.css'
 
 export default function Weather() {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState('');
-    //           useEffect(() => {
-    //               if(search)
-    //               {
-    //                   handleSearch()
-    //               }
-    // }, [])
-    
     
     const handleSearch = (e) => {
         e.preventDefault();
